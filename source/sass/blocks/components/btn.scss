@@ -17,6 +17,15 @@
 
   transition: opacity $trans-default;
 
+  @include vp-1365 {
+    justify-content: center;
+    padding: 24px 33px;
+  }
+
+  @include vp-767 {
+    padding: 25px 80px;
+  }
+
   @include hover-focus {
     color: $color-egyptian-blue;
     background-color: $color-default-white;

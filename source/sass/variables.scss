@@ -3,18 +3,13 @@
 
 // Default
 
-<<<<<<< HEAD
 $color-default-black:               #102654;
-=======
-$color-default-black:               #000000;
->>>>>>> 80389a8a1de2bc7e68a129f7a5eb13c959d50fdb
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-<<<<<<< HEAD
 $color-egyptian-blue:               #103AAE;
 $color-torch-red:                   #ff1553;
 $color-black-russian:               #030A1A;
@@ -23,15 +18,7 @@ $color-torch-red-error:             #FF121F;
 
 $cobalt-to-left:                    linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
 $torch-red-to-right:                linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
-$conic-venetian-red-dark-cerulean:  conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
-=======
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
-
-// Gradient
-
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
->>>>>>> 80389a8a1de2bc7e68a129f7a5eb13c959d50fdb
+$conic-venetian-red-dark-cerulean:  conic-gradient(#003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
 
 // Typography
 // ---------------------------------
@@ -43,12 +30,8 @@ $fz-default:                        16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-<<<<<<< HEAD
 $ff-alumni:                         "Alumni Sans", "Arial", sans-serif;
 $ff-roboto:                         "Roboto Condensed", "Arial", sans-serif;
-=======
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
->>>>>>> 80389a8a1de2bc7e68a129f7a5eb13c959d50fdb
 
 // Animation
 // ---------------------------------
@@ -65,12 +48,9 @@ $trans-600:                         0.6s $tf-default;
 // ---------------------------------
 
 $vp-320:                            320px;
-$vp-375:                            375px;
 $vp-768:                            768px;
-$vp-1024:                           1024px;
-$vp-1280:                           1280px;
-$vp-1440:                           1440px;
-$vp-1920:                           1920px;
+$vp-1366:                           1366px;
+
 
 // Retina
 // ---------------------------------

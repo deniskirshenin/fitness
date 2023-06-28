@@ -18,11 +18,15 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
+@import "blocks/components/btn.scss";
 @import "blocks/modal";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/sections/header.scss";
+@import "blocks/sections/hero.scss";
+@import "blocks/sections/footer.scss";
+@import "blocks/components/menu-item.scss";
 
 // ---------------------------------
 

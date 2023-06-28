@@ -1,0 +1,15 @@
+.menu-item {
+  font-size: 14px;
+  font-family: $ff-roboto;
+  line-height: 22px;
+  padding: 5px;
+
+  @include hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  @include focus {
+    padding: 5px 10px;
+    border: 1px solid $color-default-white;
+  }
+}
