@@ -25,11 +25,12 @@
         </div>
       </header>
       <main>
+        <h1 class="visually-hidden">Фитнес Центр</h1>
         <section class="hero">
           <div class="container">
             <div class="hero__wrapper">
               <small>омск</small>
-              <h1>ФИТНЕС <br>ЦЕНТР</h1>
+              <h2>ФИТНЕС <br>ЦЕНТР</h2>
               <p>Тренажёрный зал<br>Групповые занятия<br>Кардио-зона</p>
               <div class="hero__image-wrapper">
                 <picture>
@@ -41,6 +42,119 @@
             </div>
           </div>
         </section>
+        <section class="gym">
+          <div class="container">
+            <div class="gym__wrapper">
+              <h2>Тренажерный зал</h2>
+              <article class="gym__text-wrapper">
+                <h3>Просторный зал площадью 900 кв/м</h3>
+                <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+                <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+              </article>
+              <div class="gym__image-wrapper">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./img/gym-mobile@1x.jpg 1x, ./img/gym-mobile@1x.jpg 2x">
+                  <source media="(max-width: 1365px)" srcset="./img/gym-tablet@1x.jpg 1x, ./img/gym-desktop@1x.jpg 2x">
+                  <img src="./img/gym-desktop@1x.jpg" alt="Наш зал." srcset="./img/gym-desktop@1x.jpg 1x, ./img/gym-desktop@2x.jpg 2x" width="600" height="401">
+                </picture>
+              </div>
+              <div class="gym__video-wrapper">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./img/video-poster-mobile@1x.jpg 1x, ./img/video-poster-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1365px)" srcset="./img/video-poster-tablet@1x.jpg 1x, ./img/video-poster-tablet@2x.jpg 2x">
+                  <img src="./img/video-poster-desktop@1x.jpg" srcset="./img/video-poster-desktop@1x.jpg 1x, ./img/video-poster-desktop@2x.jpg 2x" alt="Румтур по залу." width="364" height="228">
+                </picture>
+                <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?controls=0" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+                <button class="play-button"><svg class="play-button__icon" width="17" height="17"><use xlink:href="./img/sprite.svg#play-icon"></use></svg></button>
+              </div>
+            </div>
+          </div>
+        </section>
+      <section class="subscriptions">
+        <div class="container">
+          <div class="subscriptions__wrapper">
+            <h2>Абонементы</h2>
+            <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
+              <div class="tabs__controls" data-tabs="controls">
+                <button class="tabs__control is-active btn" type="button" data-tabs="control" data-index="0">1 месяц</button>
+                <button class="tabs__control btn" type="button" data-tabs="control" data-index="1">6 месяцев</button>
+                <button class="tabs__control btn" type="button" data-tabs="control" data-index="2">12 месяцев</button>
+              </div>
+              <div class="tabs__content" data-tabs="content">
+                <ul class="tabs__element" data-tabs="element">
+                  <li class="tabs__element-item">
+                    <h3>С тренером</h3>
+                    <p>12 занятий</p>
+                    <small>5000</small>
+                    <strong>5000<span>₽</span></strong>
+                    <button class="btn--primary subscriptions__button">купить абонемент</button>
+                  </li>
+                  <li class="tabs__element-item">
+                    <h3>Дневной</h3>
+                    <p>с 8:00 до 17:00 </p>
+                    <small>1700</small>
+                    <strong>1700<span>₽</span></strong>
+                    <button class="btn--primary subscriptions__button">купить абонемент</button>
+                  </li>
+                  <li class="tabs__element-item">
+                    <h3>Полный день</h3>
+                    <p>с 8:00 до 22:00</p>
+                    <small>2700</small>
+                    <strong>2700<span>₽</span></strong>
+                    <button class="btn--primary subscriptions__button">купить абонемент</button>
+                  </li>
+                </ul>
+                <ul class="tabs__element" data-tabs="element">
+                  <li class="tabs__element-item">
+                    <h3>С тренером</h3>
+                    <p>15 занятий</p>
+                    <small>5000</small>
+                    <strong>5000<span>₽</span></strong>
+                    <button class="btn--primary subscriptions__button">купить абонемент</button>
+                  </li>
+                  <li class="tabs__element-item">
+                    <h3>Дневной</h3>
+                    <p>с 8:00 до 17:00 </p>
+                    <small>1700</small>
+                    <strong>1700<span>₽</span></strong>
+                    <button class="btn--primary subscriptions__button">купить абонемент</button>
+                  </li>
+                  <li class="tabs__element-item">
+                    <h3>Полный день</h3>
+                    <p>с 8:00 до 22:00</p>
+                    <small>2700</small>
+                    <strong>2700<span>₽</span></strong>
+                    <button class="btn--primary subscriptions__button">купить абонемент</button>
+                  </li>
+                </ul>
+                <ul class="tabs__element" data-tabs="element">
+                  <li class="tabs__element-item">
+                    <h3>С тренером</h3>
+                    <p>18 занятий</p>
+                    <small>5000</small>
+                    <strong>5000<span>₽</span></strong>
+                    <button class="btn--primary subscriptions__button">купить абонемент</button>
+                  </li>
+                  <li class="tabs__element-item">
+                    <h3>Дневной</h3>
+                    <p>с 8:00 до 17:00 </p>
+                    <small>1700</small>
+                    <strong>1700<span>₽</span></strong>
+                    <button class="btn--primary subscriptions__button">купить абонемент</button>
+                  </li>
+                  <li class="tabs__element-item">
+                    <h3>Полный день</h3>
+                    <p>с 8:00 до 22:00</p>
+                    <small>2700</small>
+                    <strong>2700<span>₽</span></strong>
+                    <button class="btn--primary subscriptions__button">купить абонемент</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
       </main>
       <footer class="footer">
         <div class="container">
