@@ -1,5 +1,11 @@
 [data-accordion="element"].is-active > [data-accordion="content"] {
   max-height: 100%;
+
+  grid-column: 1 / -1;
+
+  @include vp-1365 {
+    grid-column: 1 / 2;
+  }
 }
 
 [data-accordion="parent"].no-transition [data-accordion="content"] {
@@ -10,4 +16,10 @@
   max-height: 0;
   transition: max-height 0.3s;
   overflow: hidden;
+
+  grid-column: 1 / -1;
+
+  @include vp-1365 {
+    grid-column: 1 / 2;
+  }
 }

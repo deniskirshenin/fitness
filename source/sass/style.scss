@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -32,6 +32,17 @@
 @import "blocks/components/tabs.scss";
 @import "blocks/components/data-tabs.scss";
 @import "blocks/sections/subscriptions.scss";
+@import "blocks/sections/super-games.scss";
+@import "blocks/sections/coaches.scss";
+@import "blocks/components/coach-card.scss";
+@import "blocks/sections/advantages.scss";
+@import "blocks/components/advantage-card.scss";
+@import "blocks/sections/promotions.scss";
+@import "blocks/components/promotion-card.scss";
+@import "blocks/components/accordion.scss";
+@import "blocks/components/data-accordion.scss";
+@import "blocks/components/tabs-faq.scss";
+@import "blocks/sections/faq.scss";
 
 // ---------------------------------
 

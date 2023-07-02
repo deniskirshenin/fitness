@@ -1,0 +1,164 @@
+.promotion-card {
+  display: flex;
+  background-color: $color-torch-red-banner;
+  width: 560px;
+
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+
+  @include vp-1365 {
+    width: 678px;
+
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
+  @include vp-767 {
+    width: 290px;
+
+    flex-direction: column;
+  }
+}
+
+.promotion-card--secondary:first-child {
+  grid-column: 2 / 3;
+
+  @include vp-1365 {
+    grid-column: 1 / 2;
+  }
+}
+
+.promotion-card--secondary:last-child {
+  grid-column: 2 / 3;
+}
+
+.promotion-card__info {
+  display: flex;
+  flex-direction: column;
+  font-family: $ff-roboto;
+  color: $color-default-white;
+  width: 280px;
+
+  padding: 45px;
+
+  @include vp-767 {
+    width: 290px;
+
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.promotion-card__info h3 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 156%;
+
+  margin: 0;
+}
+
+.promotion-card__info span {
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 156%;
+
+  @include vp-1365 {
+    line-height: 100%;
+    padding: 0 0 35px 0;
+  }
+
+  @include vp-767 {
+    padding: 0 0 10px 0;
+  }
+}
+
+.promotion-card__info p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+
+  padding: 0 0 148px 0;
+  margin: 0;
+
+  @include vp-767 {
+    padding: 0 0 15px 0;
+  }
+}
+
+.promotion-card__button {
+  margin-right: auto;
+
+  @include vp-1365 {
+    margin-top: auto;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
+}
+
+.promotion-card__image-wrapper {
+  width: 280px;
+  height: 462px;
+
+  @include vp-1365 {
+    width: 399px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 300px;
+  }
+}
+
+.promotion-card__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.promotion-card--secondary {
+  display: flex;
+  flex-direction: column;
+  color: $color-resolution-blue;
+  font-family: $ff-roboto;
+
+  padding: 28px;
+
+  border-width: 7px;
+  border-style: solid;
+  border-image: $torch-red-to-right 1;
+
+  @include vp-767 {
+    padding: 46px 41px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.promotion-card--secondary h3 {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+
+  margin: 0;
+}
+
+.promotion-card--secondary p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+
+  margin: 0;
+  padding: 0 0 53px 0;
+
+  @include vp-767 {
+    text-align: center;
+    padding: 0 0 30px 0;
+  }
+}

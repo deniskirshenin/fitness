@@ -55,6 +55,7 @@
   &--link-dark-bg {
     padding: 0 0 5px 0;
 
+    border: none;
     border-bottom: 1px solid $color-default-white;
 
     color: $color-default-white;
@@ -65,6 +66,7 @@
     line-height: 14px;
     letter-spacing: 0.7px;
     text-transform: uppercase;
+    background-color: transparent;
 
     @include hover {
       opacity: 0.8;
@@ -83,6 +85,7 @@
   &--link-light-bg {
     padding: 0 0 5px 0;
 
+    border: none;
     border-bottom: 1px solid $color-default-black;
 
     color: $color-default-black;
@@ -93,6 +96,7 @@
     line-height: 14px;
     letter-spacing: 0.7px;
     text-transform: uppercase;
+    background-color: transparent;
 
     @include hover {
       opacity: 0.7;
