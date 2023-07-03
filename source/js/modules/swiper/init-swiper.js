@@ -1,10 +1,14 @@
 import Swiper from '../../vendor/swiper';
 
-const slider = document.querySelector('.swiper');
-const prevButton = document.querySelector('.coaches__button-prev');
-const nextButton = document.querySelector('.coaches__button-next');
+const sliderCoaches = document.querySelector('.coaches__slider');
+const prevButtonCoaches = document.querySelector('.coaches__button-prev');
+const nextButtonCoaches = document.querySelector('.coaches__button-next');
 
-const initSwiper = () => new Swiper(slider, {
+const reviewSlider = document.querySelector('.review__slider');
+const prevButton = document.querySelector('.review__slider-button-prev');
+const nextButton = document.querySelector('.review__slider-button-next');
+
+const initSwiper = () => new Swiper(sliderCoaches, {
   direction: 'horizontal',
   loop: true,
   breakpoints: {
@@ -22,9 +26,19 @@ const initSwiper = () => new Swiper(slider, {
     },
   },
   navigation: {
+    nextEl: nextButtonCoaches,
+    prevEl: prevButtonCoaches,
+  },
+});
+
+const initReviewSwiper = () => new Swiper(reviewSlider, {
+  direction: 'horizontal',
+  loop: false,
+  slidesPerView: 1,
+  navigation: {
     nextEl: nextButton,
     prevEl: prevButton,
   },
 });
 
-export {initSwiper};
+export {initSwiper, initReviewSwiper};
