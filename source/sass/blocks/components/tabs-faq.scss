@@ -9,7 +9,7 @@
   grid-row: 2 / 3;
   column-gap: 40px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     flex-direction: column;
   }
 }
@@ -22,9 +22,9 @@
   width: auto;
   margin-bottom: 39px;
   color: $color-default-black;
-  row-gap: 20px;
+  row-gap: 7px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 100%;
     row-gap: 0;
     column-gap: 10px;
@@ -50,28 +50,34 @@
   text-transform: none;
 
   cursor: pointer;
-  padding: 18px 80px;
+  padding: 18px 84px;
   min-width: auto;
   justify-content: center;
   color: $color-default-black;
-  border: 1px solid #10265433;
+  border: 1px solid $color-black-opacity;
 
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 100%;
     padding: 18px 39px;
   }
 
   @include vp-767 {
     font-size: 16px;
-    padding: 14px;
+    padding: 13px;
   }
 
   &.is-active {
     color: $color-default-white;
-    background: linear-gradient(to right bottom,#d10a42 0,#0041ca 87.33%);
+    background: linear-gradient(to right bottom, #d10a42 0, #0041ca 87.33%);
     background-clip: padding-box;
-    border: none;
+    border: 1px solid transparent;
+
+    @include hover-focus {
+      color: $color-default-black;
+      background: $color-default-white;
+      border: 1px solid $color-default-black;
+    }
   }
 }
 
@@ -89,13 +95,13 @@
   margin: 0;
   width: 100%;
 
-  @include vp-1365 {
+  @include vp-1199 {
     flex-direction: column;
     padding: 0;
   }
 }
 
-.tabs__element-item {
+.tabs-faq__element-item {
   position: relative;
 
   display: flex;
@@ -108,93 +114,13 @@
 
   padding: 68px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     border: none;
   }
 
   @include vp-767 {
     padding: 55px 42px;
   }
-}
-
-@include vp-1365 {
-  .tabs__element-item:not(:last-child) {
-    margin-bottom: 40px;
-  }
-}
-
-.tabs__element-item h3 {
-  text-align: center;
-  font-size: 26px;
-  font-family: $ff-roboto;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110.156%;
-
-  margin: 0;
-  padding: 0 0 22px 0;
-
-  grid-column: 1 / -1;
-
-  @include vp-767 {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-
-    padding: 0 0 20px 0;
-  }
-}
-
-.tabs__element-item p {
-  text-align: center;
-  font-size: 16px;
-  font-family: $ff-roboto;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-
-  margin: 0;
-  padding: 0 0 59px 0;
-
-  @include vp-767 {
-    padding: 0 0 50px 0;
-  }
-}
-
-.tabs__element-item small {
-  color: $color-whisper;
-  font-size: 100px;
-  font-family: $ff-roboto;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100px;
-  opacity: 0.48;
-
-  padding: 0 0 59px 0;
-}
-
-.tabs__element-item strong {
-  position: absolute;
-  color: $color-egyptian-blue;
-  font-size: 60px;
-  font-family: $ff-roboto;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-
-  top: 231px;
-  bottom: 0;
-
-  @include vp-767 {
-    top: 196px;
-  }
-}
-
-.tabs__element-item span {
-  font-family: $ff-rouble;
-  color: $color-default-black;
-  margin-left: 14px;
 }
 
 .tabs--unset .tabs__content {

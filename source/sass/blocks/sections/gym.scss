@@ -5,15 +5,17 @@
 .gym__wrapper {
   position: relative;
   display: grid;
-  grid-template-columns: 500px 660px;
-  grid-template-rows: 111px 405px;
+  grid-template-columns: 415px 660px;
+  grid-template-rows: 95px 421px;
+
+  column-gap: 85px;
 
   width: 1160px;
 
   margin: 0 auto;
   padding: 120px 0;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 678px;
     padding: 100px 0;
 
@@ -25,7 +27,7 @@
 
   @include vp-767 {
     width: 290px;
-    padding: 70px 0;
+    padding: 65px 0 70px 0;
   }
 }
 
@@ -40,40 +42,43 @@
   grid-row: 1 / 2;
 
   margin: 0;
-  padding: 49px 117px 25px 60px;
+  padding: 40px 0 0 60px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 42px;
-    line-height: 50px;
+    line-height: 48px;
     letter-spacing: 1.26px;
+    text-align: left;
 
-    padding: 0 0 6px 0;
+    padding: 0;
+    margin: 0 auto 0 200px;
   }
 
   @include vp-767 {
     font-size: 32px;
-    line-height: 38px;
+    line-height: 34px;
     letter-spacing: 0.96px;
 
     align-self: start;
+    margin: 0;
 
-    padding: 0 0 20px 0;
+    padding: 0 0 8px 0;
   }
 }
 
 .gym__text-wrapper {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  padding: 0 85px 153px 60px;
+  padding: 0 0 153px 60px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     text-align: center;
     padding: 0 88px;
   }
 
   @include vp-767 {
     text-align: left;
-    padding: 0 0 40px 0;
+    padding: 0 0 33px 0;
   }
 }
 
@@ -84,15 +89,15 @@
   font-weight: 400;
   line-height: 150%;
 
-  padding: 0 0 55px 0;
+  padding: 8px 0 38px 0;
   margin: 0;
 
-  @include vp-1365 {
-    padding: 0 0 50px 0;
+  @include vp-1199 {
+    padding: 0 0 35px 0;
   }
 
   @include vp-767 {
-    padding: 0 0 40px 0;
+    padding: 0 0 24px 0;
   }
 }
 
@@ -105,8 +110,8 @@
 
   margin: 0;
 
-  @include vp-1365 {
-    padding: 0 0 50px 0;
+  @include vp-1199 {
+    padding: 0 0 45px 0;
 
     &:last-child {
       display: none;
@@ -119,9 +124,9 @@
 }
 
 .gym__text-wrapper p:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin: 0;
   }
 }
@@ -135,7 +140,7 @@
 
   padding: 0 0 115px 0;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 678px;
     height: 345px;
 
@@ -156,17 +161,18 @@
   object-fit: cover;
 }
 
-
 .gym__video-wrapper {
   position: absolute;
   width: 364px;
   height: 228px;
   top: 408px;
   left: 437px;
-  filter: drop-shadow(rgba(20, 54, 122, 0.50));
+  opacity: 1;
 
-  @include vp-1365 {
-    top: 80%;
+  @include vp-1199 {
+    width: 264px;
+    height: 167px;
+    top: 79%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -174,7 +180,7 @@
   @include vp-767 {
     width: 320px;
     height: 167px;
-    
+
     top: 0;
     left: 0;
     position: relative;
@@ -182,6 +188,16 @@
   }
 }
 
+.gym__video-wrapper picture {
+  display: block;
+  background-color: rgba(20, 54, 122, 0.5);
+}
+
+.gym__video-wrapper img {
+  mix-blend-mode: multiply;
+}
+
 .gym__video-wrapper iframe {
+  border: none;
   display: none;
 }

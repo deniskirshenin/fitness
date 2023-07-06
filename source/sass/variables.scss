@@ -6,29 +6,33 @@
 $color-default-black:               #102654;
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
+$color-default-error:               #ff121f;
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-egyptian-blue:               #103AAE;
+$color-egyptian-blue:               #103aae;
 $color-torch-red:                   #ff1553;
-$color-black-russian:               #030A1A;
-$color-torch-red-error:             #FF121F;
-$color-ghost-white:                 #F8F9FC;
-$color-crimson:                     #D10A42;
-$color-gray:                      #78787833;
-$color-whisper:                     #E8E8E8;
-$color-torch-red-banner:            #ED0233;
-$color-spindle:                     #B6BDCC;
-$color-persian-blue:                #2E35AC;
-$color-resolution-blue:             #1C3374;
-$color-light-slate-grey:            #74819C;
+$color-black-russian:               #030a1a;
+$color-torch-red-error:             #ff121f;
+$color-ghost-white:                 #f8f9fc;
+$color-crimson:                     #d10a42;
+$color-gray:                        rgba(120, 120, 120, 0.2);
+$color-whisper:                     #e8e8e8;
+$color-torch-red-banner:            #ed0233;
+$color-spindle:                     #b6bdcc;
+$color-persian-blue:                #2e35ac;
+$color-resolution-blue:             #1c3374;
+$color-light-slate-grey:            #74819c;
+$color-blue-opacity:                rgba(28, 51, 116, 0.2);
+$color-crimson-opacity:             rgba(209, 10, 66, 0.2);
+$color-black-opacity:               rgba(16, 38, 84, 0.2);
 
 // Gradient
 
-$cobalt-to-left:                    linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
-$torch-red-to-right:                linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
-$conic-venetian-red-dark-cerulean:  conic-gradient(#003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+$cobalt-to-left:                    linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+$torch-red-to-right:                linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+$conic-venetian-red-dark-cerulean:  conic-gradient(#003d85 32.24deg, #b80027 313.31deg);
 
 // Typography
 // ---------------------------------
@@ -59,7 +63,7 @@ $trans-600:                         0.6s $tf-default;
 
 $vp-320:                            320px;
 $vp-768:                            768px;
-$vp-1366:                           1366px;
+$vp-1200:                           1200px;
 
 
 // Retina

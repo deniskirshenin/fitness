@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initReviewSwiper, initSwiper} from './modules/swiper/init-swiper';
 import {initAccordions} from './accordion/init-accordion';
+import {onPlayClick} from './modules/video/init-video';
 
 // ---------------------------------
 
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSwiper();
     initAccordions();
     initReviewSwiper();
+    onPlayClick();
   });
 });
 

@@ -7,7 +7,7 @@
     background-image: url("../../../img/hero-bg-desktop@2x.jpg");
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     background-image: url("../../../img/hero-bg-tablet@1x.jpg");
 
     @include retina {
@@ -26,14 +26,15 @@
 
 .hero__wrapper {
   display: grid;
-  grid-template-columns: 132px 264px 764px;
+  grid-template-columns: 132px auto 530px;
   grid-template-rows: repeat(3, auto);
-  width: 1160px;
-  margin: 0 auto;
+  width: 940px;
+  margin: 0;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 678px;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: 113px 208px 1fr;
+    margin: 0 auto;
   }
 
   @include vp-767 {
@@ -53,24 +54,25 @@
   letter-spacing: 4.6px;
 
   margin: 0;
-  padding: 0 0 80px 0;
+  padding: 0 45px 43px 15px;
 
   grid-row: 2 / 3;
   grid-column: 2 / 3;
 
-  @include vp-1365 {
+  @include vp-1199 {
     text-align: right;
     font-size: 72px;
     letter-spacing: 3.6px;
     line-height: 86px;
 
-    padding: 0 0 29px 0;
+    padding: 0 0 29px 25px;
   }
 
   @include vp-767 {
     font-size: 72px;
+    line-height: 120%;
     letter-spacing: 3.6px;
-    padding: 0 0 25px 0;
+    padding: 0 0 23px 0;
   }
 }
 
@@ -80,19 +82,20 @@
   font-family: $ff-alumni;
   font-weight: 600;
   letter-spacing: 1.44px;
+  line-height: 58px;
 
   grid-row: 1 / 2;
   grid-column: 2 / 3;
 
-  padding: 172px 51px 25px 0;
+  padding: 162px 96px 14px 0;
   justify-self: self-end;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 34px;
     font-weight: 600;
     letter-spacing: 1.02px;
 
-    padding: 139px 0 15px 0;
+    padding: 123px 0 0 0;
   }
 
   @include vp-767 {
@@ -100,7 +103,7 @@
     font-weight: 600;
     letter-spacing: 0.84px;
 
-    padding: 115px 0 5px 0;
+    padding: 95px 3px 2px 0;
   }
 }
 
@@ -112,19 +115,19 @@
   line-height: 150%;
 
   margin: 0;
-  padding: 120px 0 0 19px;
+  padding: 120px 0 0 0;
 
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   justify-self: self-end;
 
-  @include vp-1365 {
-    padding: 100px 15px 0 0;
+  @include vp-1199 {
+    padding: 90px 0 0 0;
   }
 
   @include vp-767 {
     position: absolute;
-    bottom: 62px;
+    bottom: 55px;
     left: 0;
     min-width: 113px;
     padding: 0;
@@ -133,14 +136,15 @@
 
 .hero__image-wrapper {
   padding: 51px 0 51px 0;
-  margin-left: 64px;
-  margin-right: 200px;
   box-sizing: content-box;
+  width: 500px;
+  height: 556px;
+  margin: 0 0 0 20px;
 
   grid-column: 3 / 4;
   grid-row: 1 / -1;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 324px;
     height: 390px;
 
@@ -153,19 +157,28 @@
   }
 }
 
+.hero__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero__button {
-  margin-bottom: 96px;
-  margin-left: auto;
+  margin: 5px 45px 94px auto;
 
   grid-row: 3 / 4;
   grid-column: 2 /3;
 
-  @include vp-1365 {
-    margin-bottom: 107px;
+  padding: 21px 53px;
+
+  @include vp-1199 {
+    margin: 5px 0 103px 25px;
+    padding: 21px 10px;
   }
 
   @include vp-767 {
     grid-column: 1 / -1;
     margin: 0 0 80px 0;
+    padding: 20px 10px;
   }
 }

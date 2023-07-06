@@ -1,9 +1,9 @@
 .super-games {
   background-color: $color-default-white;
 
-  padding: 120px 0 106px 0;
+  padding: 120px 0 0 0;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding: 100px 0;
   }
 
@@ -16,13 +16,16 @@
   display: grid;
   grid-template-columns: 500px 660px;
 
+  position: relative;
+  z-index: 1;
+
   width: 1160px;
   margin: 0 auto;
 
   background-color: $color-torch-red-banner;
 
-  @include vp-1365 {
-    grid-template-columns: auto 386px;
+  @include vp-1199 {
+    grid-template-columns: 292px 386px;
 
     width: 678px;
   }
@@ -37,11 +40,11 @@
 
 .super-games__info {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr auto;
 
   padding: 85px 78px 87px 78px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding: 51px 45px;
   }
 }
@@ -56,14 +59,15 @@
   line-height: 96%;
   letter-spacing: 2.46px;
 
-  padding: 0;
+  padding: 0 50px 0 0;
   margin: 0;
 
   grid-column: 1 / 2;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 48px;
     letter-spacing: 1.44px;
+    padding: 0 35px 0 5px;
   }
 }
 
@@ -83,14 +87,16 @@
   font-family: $ff-roboto;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%;
-  padding: 0 0 10px 0;
+  line-height: 100%;
+  padding: 0 0 7px 0;
   border-bottom: 2px solid $color-default-white;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 12px;
-    line-height: 75%;
-    padding: 0 0 5px 0;
+    line-height: 85%;
+    padding: 0 0 4px 0;
+    border-bottom: 1px solid $color-default-white;
+    width: 56px;
   }
 }
 
@@ -98,7 +104,7 @@
   display: flex;
   align-items: flex-start;
   margin: 0;
-  padding: 9px 0 0 0;
+  padding: 0;
   column-gap: 7px;
   margin-bottom: 20px;
 
@@ -107,9 +113,9 @@
   font-family: $ff-roboto;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 150%;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 10px;
     line-height: 90%;
     margin-bottom: 10px;
@@ -119,10 +125,22 @@
   }
 }
 
-.super-games__date dd:not(:last-child) {
-  margin-bottom: 10px;
+.super-games__date dt:first-child {
+  width: 64px;
 
-  @include vp-1365 {
+  @include vp-1199 {
+    width: 42px;
+  }
+}
+
+.super-games__date dt:last-child {
+  width: 88px;
+}
+
+.super-games__date dd:not(:last-child) {
+  margin-bottom: 25px;
+
+  @include vp-1199 {
     margin-bottom: 14px;
   }
 }
@@ -134,9 +152,9 @@
   font-family: $ff-roboto;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 100%;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 24px;
     line-height: 18px;
   }
@@ -155,10 +173,14 @@
   padding: 0 0 45px 0;
   margin: 0;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 12px;
 
     padding: 0 0 29px 0;
+  }
+
+  @include vp-767 {
+    padding: 0 0 31px 0;
   }
 }
 
@@ -178,10 +200,15 @@
 
   padding: 22px 103px;
 
-  @include vp-1365 {
-    padding: 14px 32px;
+  @include vp-1199 {
+    font-size: 10px;
+    line-height: normal;
+    letter-spacing: 0.5px;
+
+    padding: 14px 50px;
     line-height: 7px;
     border: 2px solid $color-default-white;
+    margin-right: auto;
   }
 }
 
@@ -189,7 +216,7 @@
   width: 660px;
   height: 500px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 386px;
     height: 292px;
   }

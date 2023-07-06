@@ -12,7 +12,7 @@ const initSwiper = () => new Swiper(sliderCoaches, {
   direction: 'horizontal',
   loop: true,
   breakpoints: {
-    1365: {
+    1200: {
       slidesPerView: 4,
       spaceBetween: 40,
     },

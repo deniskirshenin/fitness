@@ -1,9 +1,8 @@
 .coach-card {
   position: relative;
   font-family: $ff-roboto;
-  position: relative;
-  width: 260px;
-  height: 294px;
+  max-width: 260px;
+  max-height: 294px;
   margin: 0;
 
   @include hover-focus {
@@ -11,30 +10,82 @@
       transform: scaleY(1);
     }
 
-    .coach-card__image-wrapper figcaption {
+    .coach-card__image-wrapper span {
       transform: scaleY(0);
+    }
+  }
+
+  @include vp-1199 {
+    max-width: 268px;
+    min-height: 294px;
+
+    @include active {
+      .coach-card__info {
+        transform: scaleY(1);
+      }
+
+      .coach-card__image-wrapper span {
+        transform: scaleY(0);
+      }
+    }
+  }
+
+  @include vp-767 {
+    max-width: 226px;
+    min-height: 274px;
+
+    @include active {
+      .coach-card__info {
+        transform: scaleY(1);
+      }
+
+      .coach-card__image-wrapper figcaption {
+        transform: scaleY(0);
+      }
     }
   }
 }
 
+.coach-card__image-wrapper {
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.coach-card__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .coach-card__info {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(16,38,84,.89);
+  background-color: rgba(16, 38, 84, 0.89);
   color: $color-default-white;
-  padding: 58px 47px;
+  padding: 56px 40px;
   transform: scaleY(0);
+
+  @include vp-767 {
+    padding: 46px 30px;
+  }
 }
 
-.coach-card h3 {
+.coach-card__info h3 {
   color: $color-default-white;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 100%;
+  margin: 0;
 }
 
 .coach-card__info p {
@@ -45,22 +96,40 @@
   line-height: 150%;
   margin: 0;
 
-  padding: 0 0 25px 0;
+  padding: 0 0 36px 0;
+
+  @include vp-767 {
+    padding: 0 0 34px 0;
+  }
 }
 
 .coach-card__info ul {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 12px;
+
   color: $color-default-white;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin: 0;
-  padding: 0 0 0 10px;
+  margin: 0 0 0 30px;
+  padding: 0 0 5px 0;
+
+  @include vp-767 {
+    margin: 0 0 0 18px;
+  }
 }
 
-.coach-card__image-wrapper figcaption {
+.coach-card__info li {
+  align-items: flex-start;
+}
+
+.coach-card__image-wrapper span {
+  width: 100%;
   position: absolute;
-  bottom: 30px;
+  bottom: 23px;
   left: 50%;
   translate: (-50%);
 
@@ -69,6 +138,13 @@
   font-weight: 700;
   line-height: 150%;
   color: $color-default-white;
+  text-align: center;
 
   transform: scaleY(1);
+
+  @include vp-767 {
+    width: 100%;
+    text-align: center;
+    bottom: 30px;
+  }
 }

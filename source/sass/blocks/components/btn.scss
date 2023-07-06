@@ -17,7 +17,7 @@
 
   transition: opacity $trans-default;
 
-  @include vp-1365 {
+  @include vp-1199 {
     justify-content: center;
     padding: 24px 33px;
   }
@@ -29,11 +29,13 @@
   @include hover-focus {
     color: $color-egyptian-blue;
     background-color: $color-default-white;
+    cursor: pointer;
   }
 
   @include active {
     color: $color-default-black;
     background-color: $color-default-white;
+    cursor: pointer;
   }
 
   &--primary {
@@ -44,11 +46,13 @@
     @include hover-focus {
       color: $color-default-white;
       background-color: $torch-red-to-right;
+      cursor: pointer;
     }
 
     @include active {
       color: rgba($color-default-black, 0.7);
       background-color: $color-default-white;
+      cursor: pointer;
     }
   }
 
@@ -70,6 +74,8 @@
 
     @include hover {
       opacity: 0.8;
+      background-color: transparent;
+      color: $color-default-white;
     }
 
     @include focus {
@@ -100,6 +106,8 @@
 
     @include hover {
       opacity: 0.7;
+      color: $color-default-black;
+      border-bottom: 1px solid $color-default-black;
     }
 
     @include focus {

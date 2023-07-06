@@ -7,7 +7,7 @@
   justify-content: space-between;
   width: 1160px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 678px;
   }
 
@@ -24,10 +24,10 @@
   font-family: $ff-alumni;
   font-weight: 600;
   letter-spacing: 0.72px;
+  line-height: 44px;
 
-
-  @include vp-1365 {
-    padding: 40px 0 25px 0;
+  @include vp-1199 {
+    padding: 25px 0;
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 0.48px;
@@ -39,6 +39,7 @@
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.4px;
+    line-height: 20px;
   }
 }
 
@@ -50,11 +51,12 @@
   font-family: $ff-alumni;
   font-weight: 600;
   letter-spacing: 0.78px;
+  line-height: 31px;
 
   margin-left: auto;
 
-  @include vp-1365 {
-    padding: 40px 0 25px 0;
+  @include vp-1199 {
+    padding: 35px 0 25px 0;
 
     font-size: 24px;
     font-weight: 700;
@@ -66,5 +68,6 @@
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.4px;
+    line-height: 14px;
   }
 }

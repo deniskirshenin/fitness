@@ -5,19 +5,22 @@
 
 .coaches__wrapper {
   display: grid;
-  grid-template-columns: auto 1160px auto;
+  grid-template-columns: 1fr 1160px 1fr;
   padding: 106px 0 94px 0;
-  width: 1366px;
+  width: 100%;
   margin: 0 auto;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 768px;
     grid-template-columns: auto 566px auto;
+    padding: 0 0 100px 0;
   }
 
   @include vp-767 {
     width: 320px;
     grid-template-columns: 1fr 226px 1fr;
+
+    padding: 0 0 70px 0;
   }
 }
 
@@ -37,10 +40,25 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.62px;
-  grid-column: 1 / -1;
+  grid-column: 2 / 3;
 
   margin: 0;
   padding: 0 0 48px 0;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    padding: 0 0 30px 0;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+
+    padding: 0 0 50px 0;
+  }
 }
 
 .coaches__button {
@@ -48,8 +66,8 @@
   justify-content: center;
   align-items: center;
   align-self: center;
-  height: 56px;
-  width: 56px;
+  height: 32px;
+  width: 20px;
   color: $color-egyptian-blue;
   background: transparent;
   border: none;
@@ -60,8 +78,8 @@
   }
 
   @include vp-767 {
-    height: 10px;
-    width: 17px;
+    height: 19px;
+    width: 10px;
   }
 }
 
@@ -70,7 +88,7 @@
 
   justify-self: end;
 
-  margin-right: 18px;
+  margin: 0 22px 0 0;
   padding: 12px 22px 12px 18px;
 
   @include hover-focus {
@@ -80,41 +98,53 @@
   }
 
   @include active {
-    padding: 11px 21px 11px 17px;
+    padding: 12px 18px 12px 22px;
     border-radius: 50%;
     border: 1px solid $color-egyptian-blue;
     color: $color-default-white;
     background-color: $color-egyptian-blue;
   }
 
+  @include vp-1199 {
+    margin: 0;
+    padding: 12px 40px 12px 0;
+  }
+
   @include vp-767 {
-    margin-right: 22px;
     padding: 0;
+
+    margin: 0 22px 0 0;
   }
 }
 
 .coaches__button-next {
   grid-column: 3 / 4;
 
-  margin-left: 18px;
-  padding: 12px 18px 12px 22px;
+  justify-self: start;
+  margin: 0 0 0 22px;
+  padding: 12px 22px 12px 18px;
 
   @include hover-focus {
-    padding: 11px 17px 11px 21px;
+    padding: 12px 18px 12px 22px;
     border-radius: 50%;
     border: 1px solid $color-egyptian-blue;
   }
 
   @include active {
-    padding: 11px 21px 11px 17px;
+    padding: 12px 18px 12px 22px;
     border-radius: 50%;
     border: 1px solid $color-egyptian-blue;
     color: $color-default-white;
     background-color: $color-egyptian-blue;
   }
 
+  @include vp-1199 {
+    padding: 12px 0 12px 40px;
+    margin: 0;
+  }
+
   @include vp-767 {
-    margin-left: 22px;
+    margin: 0 0 0 22px;
     padding: 0;
   }
 }
