@@ -5417,6 +5417,7 @@ button,
 
   .tabs__control {
     font-size: 16px;
+    padding: 0;
   }
 
   .tabs__control.is-active::after {
