@@ -2276,6 +2276,7 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   letter-spacing: 4.6px;
+  text-transform: uppercase;
   margin: 0;
   padding: 0 45px 43px 15px;
   -ms-grid-row: 2;
@@ -4518,6 +4519,7 @@ button,
   }
 
   .hero h2 {
+    text-transform: none;
     text-align: right;
     font-size: 72px;
     letter-spacing: 3.6px;
@@ -5491,8 +5493,16 @@ button,
     flex-direction: column;
   }
 
+  .super-games__info h2 {
+    padding: 0 35px 0 0;
+  }
+
   .super-games__info p {
     padding: 0 0 31px 0;
+  }
+
+  .super-games__button {
+    padding: 14px 49px;
   }
 
   .super-games__image-wrapper {
