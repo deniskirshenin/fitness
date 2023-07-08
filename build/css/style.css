@@ -4674,6 +4674,10 @@ button,
     padding: 0;
   }
 
+  .tabs__element-item-button {
+    padding: 27px 43px;
+  }
+
   .tabs__element-item {
     border: none;
     width: 442px;
@@ -4887,6 +4891,7 @@ button,
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
+    margin: 0;
   }
 
   .advantage-card small {
@@ -4950,6 +4955,14 @@ button,
     font-size: 22px;
   }
 
+  .advantage-card--special span {
+    font-size: 74px;
+  }
+
+  .advantage-card--special p {
+    margin: 0;
+  }
+
   .promotions__wrapper {
     width: 678px;
     -ms-grid-columns: 1fr 1fr;
@@ -4962,6 +4975,7 @@ button,
     font-size: 42px;
     letter-spacing: 1.26px;
     padding: 0 0 10px 0;
+    grid-column: 1/-1;
   }
 
   .promotion-card {
@@ -4979,6 +4993,7 @@ button,
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
+    width: 100%;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -5797,6 +5812,7 @@ button,
     margin: 0 auto;
     font-size: 14px;
     letter-spacing: 0.7px;
+    padding: 0;
   }
 
   .promotion-card__image-wrapper {
@@ -5980,6 +5996,7 @@ button,
 
   .contacts__form-button {
     margin-top: 21px;
+    padding: 15px 49px;
   }
 
   .contacts__info {

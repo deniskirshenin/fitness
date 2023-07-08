@@ -42,6 +42,7 @@
   @include vp-1199 {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    width: 100%;
 
     justify-content: flex-start;
   }
@@ -189,6 +190,7 @@
 
     font-size: 14px;
     letter-spacing: 0.7px;
+    padding: 0;
   }
 }
 
