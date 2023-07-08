@@ -5679,6 +5679,10 @@ button,
     padding: 0 0 6px 0;
   }
 
+  .advantage-card--third small {
+    padding: 44px 0 0 0;
+  }
+
   .advantage-card--fourth small {
     padding: 35px 0 0 0;
   }
