@@ -1,6 +1,5 @@
 export class Tabs {
   constructor() {
-    this._windowWidth = window.innerWidth;
     this._documentClickHandler = this._documentClickHandler.bind(this);
     this._init();
   }
@@ -183,8 +182,8 @@ export class Tabs {
 
     const activeControl = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="control"].is-active'), parentElement);
     const activeElement = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="element"].is-active'), parentElement);
-    const currentHeight = contentElement.offsetHeight;
-    const newHeight = tabElements[currentIndex].offsetHeight;
+    const currentHeight = contentElement.offsetHeight ? contentElement.offsetHeight : '100%';
+    const newHeight = tabElements[currentIndex] ? tabElements[currentIndex].offsetHeight : currentHeight;
 
     parentElement.classList.add('no-action');
     document.activeElement.blur();
