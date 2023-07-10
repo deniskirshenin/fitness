@@ -211,8 +211,10 @@ export class Tabs {
       }
       setTimeout(() => {
         control.classList.add('is-active');
-        tabElements[currentIndex].classList.add('is-active');
         parentElement.classList.remove('no-action');
+        if (tabElements[currentIndex]) {
+          tabElements[currentIndex].className += ' is-active';
+        }
       }, dataDelay);
     }
   }
