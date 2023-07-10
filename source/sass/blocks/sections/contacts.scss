@@ -75,31 +75,6 @@
   }
 }
 
-.contacts__form-input input {
-  color: $color-default-white;
-  font-size: 14px;
-  font-family: $ff-roboto;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
-  background-color: transparent;
-
-  width: 100%;
-  padding: 22px 10px 6px 0;
-  border: none;
-  border-bottom: 1px solid $color-light-slate-grey;
-}
-
-.contacts__form-input input::placeholder {
-  color: $color-default-white;
-  font-size: 14px;
-  font-family: $ff-roboto;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
 .contacts__form-button {
   justify-content: center;
   padding: 21px 50px;

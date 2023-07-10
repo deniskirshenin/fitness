@@ -21,7 +21,7 @@
     height: 384px;
     bottom: -21%;
     right: 0;
-    background-image: url("../../../img/eqiupment@1x.png");
+    background-image: url("../img/eqiupment@1x.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -30,7 +30,7 @@
 
 
     @include retina {
-      background-image: url("../../../img/equipment@2x.png");
+      background-image: url("../img/equipment@2x.webp");
     }
 
     @include vp-1199 {

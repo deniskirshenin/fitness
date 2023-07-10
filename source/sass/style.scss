@@ -19,10 +19,6 @@
 // ---------------------------------
 
 @import "blocks/components/btn.scss";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
 @import "blocks/sections/header.scss";
 @import "blocks/sections/hero.scss";
 @import "blocks/sections/footer.scss";
@@ -45,6 +41,7 @@
 @import "blocks/sections/faq.scss";
 @import "blocks/sections/review.scss";
 @import "blocks/sections/contacts.scss";
+@import "blocks/components/custom-input.scss";
 
 // ---------------------------------
 

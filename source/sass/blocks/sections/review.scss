@@ -60,6 +60,7 @@
 
 .review__slider-wrapper {
   width: 560px;
+  height: auto;
 
   @include vp-1199 {
     width: 566px;
@@ -106,7 +107,6 @@
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     margin: 0 0 0 16px;
-
   }
 }
 
