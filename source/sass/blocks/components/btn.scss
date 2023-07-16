@@ -45,7 +45,7 @@
 
     @include hover-focus {
       color: $color-default-white;
-      background-color: $torch-red-to-right;
+      background: $torch-red-to-right;
       cursor: pointer;
     }
 

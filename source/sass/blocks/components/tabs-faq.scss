@@ -17,6 +17,7 @@
 .tabs-faq__controls {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   width: auto;
@@ -26,8 +27,7 @@
 
   @include vp-1199 {
     width: 100%;
-    row-gap: 0;
-    column-gap: 10px;
+    gap: 10px;
     flex-direction: row;
     margin: 0 auto 40px auto;
   }
@@ -48,23 +48,25 @@
   font-weight: 500;
   line-height: 100%;
   text-transform: none;
+  word-break: break-all;
 
   cursor: pointer;
   padding: 18px 84px;
-  min-width: auto;
+  width: 260px;
   justify-content: center;
   color: $color-default-black;
   border: 1px solid $color-black-opacity;
 
 
   @include vp-1199 {
-    width: 100%;
-    padding: 18px 39px;
+    width: 162px;
+    padding: 18px 30px;
   }
 
   @include vp-767 {
     font-size: 16px;
     padding: 13px;
+    width: auto;
   }
 
   &.is-active {
@@ -72,12 +74,12 @@
     background: linear-gradient(to right bottom, #d10a42 0, #0041ca 87.33%);
     background-clip: padding-box;
     border: 1px solid transparent;
+  }
 
-    @include hover-focus {
-      color: $color-default-black;
-      background: $color-default-white;
-      border: 1px solid $color-default-black;
-    }
+  @include hover-focus {
+    color: $color-default-black;
+    background: $color-default-white;
+    border: 1px solid $color-default-black;
   }
 }
 

@@ -1,9 +1,7 @@
 .advantages {
   background-color: $color-ghost-white;
   width: 100%;
-  padding: 119px 0 37px 0;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 108px 0 47px 0;
 
   @include vp-1199 {
     padding: 90px 45px;
@@ -27,7 +25,7 @@
     width: 678px;
 
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 96px 120px 240px 1fr;
+    grid-template-rows: repeat(4, auto);
   }
 
   @include vp-767 {

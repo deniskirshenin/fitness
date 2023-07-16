@@ -32,7 +32,7 @@
           <div class="container">
             <div class="hero__wrapper">
               <small>омск</small>
-              <h2>Фитнес <br>Центр </h2>
+              <h2>Фитнес <br>центр </h2>
               <p>Тренажёрный зал <br>Групповые занятия <br>Кардио-зона </p>
               <div class="hero__image-wrapper">
                 <picture>
@@ -66,10 +66,22 @@
                   <source media="(max-width: 1365px)" srcset="./img/video-poster-tablet@1x.webp 1x, ./img/video-poster-tablet@2x.webp 2x" loading="lazy">
                   <img id="video-poster" src="./img/video-poster-desktop@1x.webp" srcset="./img/video-poster-desktop@1x.webp 1x, ./img/video-poster-desktop@2x.webp 2x" alt="Румтур по залу." width="364" height="228" loading="lazy">
                 </picture>
-                <iframe id="video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?controls=0" allow="autoplay; encrypted-media;" allowfullscreen loading="lazy"></iframe>
+                <iframe id="video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1" allow="autoplay; encrypted-media;" allowfullscreen loading="lazy"></iframe>
                 <button class="play-button" type="button" aria-label="play-button">
-                  <svg class="play-button__icon" width="17" height="17">
-                    <use xlink:href="./img/sprite.svg#play-icon"></use>
+                  <svg class="play-button__icon" width="100" height="100" fill="none" viewBox="0 0 100 100">
+                    <circle class="play-button__icon-stroke" cx="50" cy="50" r="49" stroke="url(#a)" stroke-width="2" opacity=".2"/>
+                    <circle class="play-button__icon-fill" cx="50" cy="50" r="36" fill="url(#b)"/>
+                    <path class="play-button__icon-play" fill="#fff" d="m59 49.5-12.75 7.361V42.14L59 49.5Z"/>
+                    <defs>
+                      <linearGradient id="a" x1="19.774" x2="105.785" y1="0" y2="10.644" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#ED0233"/>
+                        <stop offset="1" stop-color="#003EB7"/>
+                      </linearGradient>
+                      <linearGradient id="b" x1="28.237" x2="90.165" y1="14" y2="21.664" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#ED0233"/>
+                        <stop offset="1" stop-color="#003EB7"/>
+                      </linearGradient>
+                    </defs>
                   </svg>
                 </button>
               </div>
@@ -96,7 +108,7 @@
                       </strong>
                       <a href="#" class="tabs__element-item-button btn btn--primary">купить абонемент</a>
                     </li>
-                    <li class="tabs__element-item is-active">
+                    <li class="tabs__element-item">
                       <h3>Дневной</h3>
                       <p>с 8:00 до 17:00 </p>
                       <small>1700</small>
@@ -122,7 +134,7 @@
                       </strong>
                       <a href="#" class="btn btn--primary tabs__element-item-button">купить абонемент</a>
                     </li>
-                    <li class="tabs__element-item is-active">
+                    <li class="tabs__element-item">
                       <h3>Дневной</h3>
                       <p>с 8:00 до 17:00 </p>
                       <small>4700</small>
@@ -148,7 +160,7 @@
                       </strong>
                       <a href="#" class="btn btn--primary tabs__element-item-button">купить абонемент</a>
                     </li>
-                    <li class="tabs__element-item is-active">
+                    <li class="tabs__element-item">
                       <h3>Дневной</h3>
                       <p>с 8:00 до 17:00 </p>
                       <small>7700</small>
@@ -377,32 +389,40 @@
             <article class="advantage-card advantage-card--first">
               <small>
                 <span>900</span>кв/м </small>
-              <h3>Площадь</h3>
-              <p>Занимайтесь без очередей <br> и&nbsp;толпучки </p>
+              <div class="advantage-card__text-wrapper">
+                <h3>Площадь</h3>
+                <p>Занимайтесь без очередей <br> и&nbsp;толпучки</p>
+              </div>
             </article>
             <article class="advantage-card advantage-card--second">
               <small>
                 <span>70</span>машин </small>
-              <h3>Собственная парковка</h3>
-              <p>Вы всегда найдете место для <br> своей машины на нашей парковке </p>
+                <div class="advantage-card__text-wrapper">
+                  <h3>Собственная парковка</h3>
+                  <p>Вы&nbsp;всегда найдете место для <br> своей машины на&nbsp;нашей парковке</p>
+                </div>
             </article>
             <article class="advantage-card advantage-card--special">
               <h3>
                 <span>100</span>Тренажеров
               </h3>
-              <p>Современные тренажеры на все группы мышц</p>
+              <p>Современные тренажеры на&nbsp;все группы мышц</p>
             </article>
             <article class="advantage-card advantage-card--third">
               <small>
                 <span>350</span>мест </small>
-              <h3>Комфорт</h3>
-              <p>Просторные раздевалки, <br> душевые, фен, Wi-Fi, кулеры </p>
+                <div class="advantage-card__text-wrapper">
+                  <h3>Комфорт</h3>
+                  <p>Просторные раздевалки, <br> душевые, фен, Wi-Fi, кулеры </p>
+                </div>
             </article>
             <article class="advantage-card advantage-card--fourth">
               <small>
                 <span>5+</span>лет </small>
-              <h3>Тренерский опыт</h3>
-              <p>Добивайтесь своих целей быстрее <br> с профессиональным тренером </p>
+                <div class="advantage-card__text-wrapper">
+                  <h3>Тренерский опыт</h3>
+                  <p>Добивайтесь своих целей быстрее <br> с&nbsp;профессиональным тренером </p>
+                </div>
             </article>
           </div>
         </section>
@@ -415,7 +435,7 @@
                   <h3>Год</h3>
                   <span>4999</span>
                   <p>Безлимитный абонемент в тренажерный зал</p>
-                  <a href="#" class="promotion-card__button btn btn--link-dark-bg">подробнее</a>
+                  <a href="#" class="promotion-card__button promotion-card__button--main btn btn--link-dark-bg">подробнее</a>
                 </div>
                 <div class="promotion-card__image-wrapper">
                   <picture>
@@ -452,7 +472,7 @@
                 <div class="tabs-faq__content" data-tabs="content">
                   <div class="tabs-faq__element" data-tabs="element">
                     <div class="accordion" data-accordion="parent">
-                      <div class="accordion__element is-active" data-accordion="element">
+                      <div class="accordion__element" data-accordion="element">
                         <h3>Как стать членом фитнес-центра?</h3>
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
@@ -492,12 +512,12 @@
                   </div>
                   <div class="tabs-faq__element" data-tabs="element">
                     <div class="accordion" data-accordion="parent">
-                      <div class="accordion__element is-active" data-accordion="element">
+                      <div class="accordion__element" data-accordion="element">
                         <h3>Занятия с тренером входят в абонемент?</h3>
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
-                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
                           </div>
                         </div>
                       </div>
@@ -506,7 +526,7 @@
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
-                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
                           </div>
                         </div>
                       </div>
@@ -515,7 +535,7 @@
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
-                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
                           </div>
                         </div>
                       </div>
@@ -524,7 +544,7 @@
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
-                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
                           </div>
                         </div>
                       </div>
@@ -532,7 +552,7 @@
                   </div>
                   <div class="tabs-faq__element" data-tabs="element">
                     <div class="accordion" data-accordion="parent">
-                      <div class="accordion__element is-active" data-accordion="element">
+                      <div class="accordion__element" data-accordion="element">
                         <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
@@ -546,7 +566,7 @@
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
-                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
                           </div>
                         </div>
                       </div>
@@ -555,7 +575,7 @@
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
-                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
                           </div>
                         </div>
                       </div>
@@ -564,7 +584,7 @@
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
-                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
                           </div>
                         </div>
                       </div>
@@ -572,12 +592,12 @@
                   </div>
                   <div class="tabs-faq__element" data-tabs="element">
                     <div class="accordion" data-accordion="parent">
-                      <div class="accordion__element is-active" data-accordion="element">
+                      <div class="accordion__element" data-accordion="element">
                         <h3>Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?</h3>
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
-                            <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+                            <p>Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>
                           </div>
                         </div>
                       </div>
@@ -586,7 +606,7 @@
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
-                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
                           </div>
                         </div>
                       </div>
@@ -595,7 +615,7 @@
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
-                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
                           </div>
                         </div>
                       </div>
@@ -604,7 +624,7 @@
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="open-close-button"></button>
                         <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
-                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                            <p>При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
                           </div>
                         </div>
                       </div>
@@ -631,21 +651,21 @@
                       <img src="./img/review-avatar@1x.webp" srcset="./img/review-avatar@1x.webp 1x, ./img/review-avatar@2x.webp 2x" alt="Аватар" loading="lazy">
                     </div>
                     <h3>Анна Орлова</h3>
-                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                    <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                   </div>
                   <div class="review__slide swiper-slide">
                     <div class="review__slide-image-wrapper">
                       <img src="./img/review-avatar@1x.webp" srcset="./img/review-avatar@1x.webp 1x, ./img/review-avatar@2x.webp 2x" alt="Аватар" loading="lazy">
                     </div>
                     <h3>Анна Орлова</h3>
-                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                    <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                   </div>
                   <div class="review__slide swiper-slide">
                     <div class="review__slide-image-wrapper">
                       <img src="./img/review-avatar@1x.webp" srcset="./img/review-avatar@1x.webp 1x, ./img/review-avatar@2x.webp 2x" alt="Аватар" loading="lazy">
                     </div>
                     <h3>Анна Орлова</h3>
-                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                    <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                   </div>
                   <div class="review__slide swiper-slide">
                     <div class="review__slide-image-wrapper">
@@ -667,44 +687,50 @@
         <section class="contacts">
           <h2 class="visually-hidden">Контактные данные</h2>
           <div class="contacts__wrapper">
-            <div class="contacts__free-training" data-form-validate>
+            <div class="contacts__free-training">
               <h3>Бесплатное занятие</h3>
-              <form class="contacts__form" action="/">
-                <div class="custom-input" data-on-input-validate data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
-                  <label for="name">
-                    <input type="text" name="name" id="name" placeholder="Имя">
-                  </label>
-                </div>
-                <div class="custom-input" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required>
-                  <label for="tel">
-                    <input type="tel" name="tel" id="tel" placeholder="Телефон">
-                  </label>
-                </div>
-                <button class="btn contacts__form-button" type="submit">отправить</button>
-              </form>
+              <div data-form-validate data-callback="base">
+                <form class="contacts__form" method="post" action="https://echo.htmlacademy.ru/">
+                  <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                    <label for="name">
+                      <input type="text" name="name" id="name" placeholder="Имя" required>
+                    </label>
+                  </div>
+                  <div class="custom-input" data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                    <label for="tel">
+                      <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
+                    </label>
+                  </div>
+                  <button class="btn contacts__form-button" type="submit">отправить</button>
+                </form>
+              </div>
             </div>
             <div class="contacts__info">
               <h3>Контакты</h3>
               <dl>
-                <div class="contacts__info-address">
-                  <dt>Адрес:</dt>
-                  <dd>г. Омск, ул. 60 лет Октября, 7</dd>
+                <div class="contacts__info-left-col">
+                  <div class="contacts__info-address">
+                    <dt>Адрес:</dt>
+                    <dd>г. Омск, ул. 60 лет Октября, 7</dd>
+                  </div>
+                  <div class="contacts__info-working-hours">
+                    <dt>График работы:</dt>
+                    <dd>Пн-Вс: с 8:00 до 22:00</dd>
+                  </div>
                 </div>
-                <div class="contacts__info-working-hours">
-                  <dt>График работы:</dt>
-                  <dd>Пн-Вс: с 8:00 до 22:00</dd>
-                </div>
-                <div class="contacts__info-phone">
-                  <dt>Телефон:</dt>
-                  <dd>
-                    <a href="tel:+8-800-555-55-55">8-800-555-55-55</a>
-                  </dd>
-                </div>
-                <div class="contacts__info-email">
-                  <dt>Email:</dt>
-                  <dd>
-                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                  </dd>
+                <div class="contacts__info__right-col">
+                  <div class="contacts__info-phone">
+                    <dt>Телефон:</dt>
+                    <dd>
+                      <a href="tel:+8-800-555-55-55">8-800-555-55-55</a>
+                    </dd>
+                  </div>
+                  <div class="contacts__info-email">
+                    <dt>Email:</dt>
+                    <dd>
+                      <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                    </dd>
+                  </div>
                 </div>
               </dl>
             </div>
@@ -716,19 +742,19 @@
           <div class="footer__wrapper">
             <a class="footer__logo" href="/">SUPERGYM</a>
             <ul class="footer__links-list">
-              <li class="footer__links-list-item footer__links-list-item--first">
+              <li class="footer__links-list-item">
                 <a class="footer__link menu-item" href="#">Услуги</a>
               </li>
-              <li class="footer__links-list-item footer__links-list-item--second">
+              <li class="footer__links-list-item">
                 <a class="footer__link menu-item" href="#">Абонементы</a>
               </li>
-              <li class="footer__links-list-item footer__links-list-item--third">
+              <li class="footer__links-list-item">
                 <a class="footer__link menu-item" href="#">Акции</a>
               </li>
-              <li class="footer__links-list-item footer__links-list-item--fourth">
+              <li class="footer__links-list-item">
                 <a class="footer__link menu-item" href="#">Тренеры</a>
               </li>
-              <li class="footer__links-list-item footer__links-list-item--fifth">
+              <li class="footer__links-list-item">
                 <a class="footer__link menu-item" href="#">Расписание</a>
               </li>
             </ul>

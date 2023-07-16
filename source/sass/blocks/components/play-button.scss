@@ -5,47 +5,72 @@
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-  padding: 14px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $torch-red-to-right padding-box,
-    $torch-red-to-right,
-    border-box;
-  border-radius: 50em;
-  border: 2px solid transparent;
-  color: $color-default-white;
-  box-shadow: 0 0 0 14px rgba(20, 54, 122, 1) inset;
   cursor: pointer;
 
   @include hover-focus {
-    color: $color-default-black;
-    background: $color-default-white border-box;
-    border: 2px solid $color-default-black;
+    .play-button__icon-stroke {
+      stroke: $color-default-black;
+      opacity: 1;
+    }
+
+    .play-button__icon-fill {
+      fill: $color-default-white;
+    }
+
+    .play-button__icon-play {
+      fill: $color-default-black;
+    }
   }
 
   @include active {
-    color: $color-default-black;
-    background: $color-default-white border-box;
-    border: 2px solid $color-default-black;
-    box-shadow: 0 0 0 21px rgba(20, 54, 122, 1) inset;
+    .play-button__icon-stroke {
+      stroke: $color-default-black;
+      opacity: 1;
+    }
+
+    .play-button__icon-fill {
+      fill: $color-default-white;
+      transform: scale(0.8);
+    }
+
+    .play-button__icon-play {
+      fill: $color-default-black;
+    }
   }
 
   @include vp-1199 {
     width: 72px;
     height: 72px;
-
-    box-shadow: 0 0 0 10px rgba(20, 54, 122, 1) inset;
   }
 
   @include vp-767 {
     width: 73px;
     height: 73px;
-
-    box-shadow: 0 0 0 10px rgba(20, 54, 122, 1) inset;
   }
 
   &:disabled {
-    opacity: 0.6;
+    .play-button__icon-stroke {
+      stroke: $color-default-black;
+      opacity: 0.4;
+    }
+
+    .play-button__icon-fill {
+      fill: $color-default-white;
+    }
+
+    .play-button__icon-play {
+      fill: $color-default-black;
+      opacity: 0.4;
+    }
   }
+}
+
+.play-button__icon-fill {
+  transform-origin: center center;
 }

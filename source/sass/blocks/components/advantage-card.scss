@@ -1,5 +1,6 @@
 .advantage-card {
   display: grid;
+  grid-template-columns: auto 1fr;
   column-gap: 30px;
 
   justify-self: start;
@@ -45,7 +46,7 @@
 .advantage-card--second {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
-  column-gap: 18px;
+  column-gap: 26px;
 
   @include vp-1199 {
     grid-column: 2 / 3;
@@ -55,7 +56,7 @@
   }
 
   @include vp-767 {
-    margin: 0 0 42px 0;
+    margin: 0 0 41px 0;
   }
 }
 
@@ -178,6 +179,16 @@
   }
 }
 
+.advantage-card__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  @include vp-1199 {
+    row-gap: 0;
+  }
+}
+
 .advantage-card h3 {
   grid-column: 2 / 3;
   grid-row: 1 / -1;
@@ -191,17 +202,21 @@
   word-break: break-all;
 
   margin: 0;
-  padding: 5px 0 0 7px;
+  padding: 4px 0 0 5px;
 
   @include vp-1199 {
     font-size: 20px;
     padding: 0;
   }
+
+  @include vp-767 {
+    text-align: center;
+  }
 }
 
 .advantage-card--third h3 {
   @include vp-1199 {
-    padding: 40px 0 0 0;
+    padding: 40px 0 5px 0;
   }
 
   @include vp-767 {
@@ -211,7 +226,7 @@
 
 .advantage-card--fourth h3 {
   @include vp-1199 {
-    padding: 40px 0 0 0;
+    padding: 40px 0 5px 0;
   }
 
   @include vp-767 {
@@ -228,14 +243,14 @@
   font-family: $ff-roboto;
   font-style: normal;
   font-weight: 300;
-  line-height: 120%;
+  line-height: 135%;
 
-  margin: 45px 0 0 0;
-  padding: 0 0 80px 0;
+  margin: 0;
+  padding: 0 0 78px 5px;
 
   @include vp-1199 {
     padding: 0;
-    margin: 30px 0 0 0;
+    margin: 0;
   }
 
   @include vp-767 {
@@ -255,7 +270,7 @@
 
 .advantage-card--third p {
   @include vp-1199 {
-    margin: 72px 0 0 0;
+    margin: 0;
   }
 
   @include vp-767 {
@@ -265,7 +280,7 @@
 
 .advantage-card--fourth p {
   @include vp-1199 {
-    margin: 72px 0 0 0;
+    margin: 0;
   }
 
   @include vp-767 {

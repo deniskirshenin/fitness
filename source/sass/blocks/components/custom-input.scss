@@ -11,15 +11,15 @@
   width: 100%;
   padding: 22px 10px 6px 0;
   border: none;
-  border-bottom: 1px solid $color-light-slate-grey;
+  border-bottom: 2px solid $color-light-slate-grey;
 
   &:hover {
-    border-bottom: 1px solid $color-default-white;
+    border-bottom: 2px solid $color-default-white;
   }
 
   &:focus {
     border: none;
-    outline: 1px solid $color-default-white;
+    outline: 2px solid $color-default-white;
   }
 }
 
@@ -34,7 +34,7 @@
 
 .is-invalid {
   input {
-    border-bottom: 1px solid $color-torch-red-error;
+    border-bottom: 2px solid $color-torch-red-error;
   }
 
   .input-message {

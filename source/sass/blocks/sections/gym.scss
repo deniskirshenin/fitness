@@ -13,7 +13,7 @@
   width: 1160px;
 
   margin: 0 auto;
-  padding: 120px 0;
+  padding: 120px 0 112px 0;
 
   @include vp-1199 {
     width: 678px;
@@ -167,12 +167,13 @@
   height: 228px;
   top: 408px;
   left: 437px;
-  opacity: 1;
+  background: rgba(20, 54, 122, 0.5);
+  z-index: 2;
 
   @include vp-1199 {
     width: 264px;
     height: 167px;
-    top: 79%;
+    top: 671px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -190,7 +191,7 @@
 
 .gym__video-wrapper picture {
   display: block;
-  background-color: rgba(20, 54, 122, 0.5);
+  mix-blend-mode: multiply;
 }
 
 .gym__video-wrapper img {
