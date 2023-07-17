@@ -39,7 +39,7 @@
   }
 
   @include vp-767 {
-    margin: 0 0 38px 0;
+    margin: 0 0 34px 0;
   }
 }
 
@@ -214,9 +214,15 @@
   }
 }
 
+.advantage-card--first h3 {
+  @include vp-767 {
+    padding: 0 0 5px 0;
+  }
+}
+
 .advantage-card--third h3 {
   @include vp-1199 {
-    padding: 40px 0 5px 0;
+    padding: 40px 0 0 0;
   }
 
   @include vp-767 {
@@ -226,7 +232,7 @@
 
 .advantage-card--fourth h3 {
   @include vp-1199 {
-    padding: 40px 0 5px 0;
+    padding: 40px 0 0 0;
   }
 
   @include vp-767 {

@@ -21,7 +21,7 @@
   flex-direction: column;
 
   width: 100%;
-  padding: 58px 170px 66px calc(100% - 580px);
+  padding: 56px 170px 68px calc(100% - 580px);
 
   @include vp-1199 {
     padding: 70px 163px 68px 133px;
@@ -38,7 +38,7 @@
   font-style: normal;
   font-weight: 800;
   line-height: 156%;
-  letter-spacing: 2.1px;
+  letter-spacing: 2.4px;
 
   margin: 0;
 
@@ -164,6 +164,10 @@
 
   margin: 0;
 
+  @include vp-1199 {
+    grid-template-columns: 45% 1fr;
+  }
+
   &::after {
     position: absolute;
     bottom: 50%;
@@ -288,7 +292,7 @@
   margin-bottom: 15px;
 
   @include vp-1199 {
-    padding: 3px 0 0 63px;
+    padding: 3px 0 0 87px;
     margin-bottom: 20px;
   }
 
@@ -318,7 +322,7 @@
   padding-left: 65px;
 
   @include vp-1199 {
-    padding-left: 63px;
+    padding-left: 87px;
     row-gap: 5px;
   }
 

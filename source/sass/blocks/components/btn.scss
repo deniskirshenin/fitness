@@ -17,6 +17,8 @@
 
   transition: opacity $trans-default;
 
+  user-select: none;
+
   @include vp-1199 {
     justify-content: center;
     padding: 24px 33px;

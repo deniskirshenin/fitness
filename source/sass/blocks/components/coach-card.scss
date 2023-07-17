@@ -75,7 +75,7 @@
   padding: 56px 40px;
   transform: scaleY(0);
 
-  overflow: scroll;
+  overflow: auto;
 
   @include vp-767 {
     padding: 46px 30px;

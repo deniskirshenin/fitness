@@ -39,16 +39,17 @@
     font-family: $ff-roboto;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%;
+    line-height: 28px;
     text-align: left;
+    align-self: center;
+    letter-spacing: 0.09px;
 
     grid-column: 1 / 2;
 
     margin: 0;
-    padding: 32px 0;
+    padding: 34px 0 31px 0;
 
     @include vp-1199 {
-      padding: 32px 0;
       line-height: 100%;
     }
 
@@ -67,6 +68,7 @@
 
     @include vp-1199 {
       width: 95%;
+      padding: 15px 0 27px 0;
     }
 
     @include vp-767 {
@@ -181,9 +183,5 @@
 
   &__wrapper {
     padding: 0;
-  }
-
-  &__content {
-    overflow: scroll;
   }
 }
